@@ -18,7 +18,6 @@ const fetchTracks=dispatch=>async()=>{
 const createTrack=dispatch=>async (name,locations)=>{
     //make request to our api
     await trackerApi.post('/tracks',{name,locations});
-
 };
 
 export const {Provider,Context}=createDataContext(
